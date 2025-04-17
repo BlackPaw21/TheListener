@@ -1,7 +1,7 @@
 # TheListener 👂
 ---
 
-A powerful man-in-the-middle (MITM) attack automation suite designed for red teamers and penetration testers.  
+**A powerful man-in-the-middle (MITM) attack automation suite designed for red teamers and penetration testers.**
 This tool leverages `Bettercap`, `Nmap`, and `Scapy` to monitor, fingerprint, and intercept traffic across a local network in real time with a live dashboard, URL/credential logging, OS detection, and optional full-target mode.
 
 > 🔧 Includes a one-command install script to set up dependencies and ensure full compatibility on any modern Linux distribution (Kali, Parrot, Ubuntu, etc).
