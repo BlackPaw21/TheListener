@@ -1,35 +1,4 @@
 #!/usr/bin/env python3
-"""
-EvenBetterCap MITM Tool
-
-Features:
-  - Automatically detect your local IP and network range using the chosen interface.
-  - Automatically list available network interfaces and allow selection by index.
-  - Discover live hosts using a ping scan (nmap -sn -PE) without a fixed timeout.
-  - Continuously update OS information for each discovered device via active nmap scans.
-    Each device is initially marked as "waiting" and is updated dynamically.
-    (In single-target mode, the OS value will be locked when a scan returns 100% accuracy.)
-  - Monitor live traffic on the network (Airodump-ng style) with packet and byte counts.
-  - Display an updating table with columns: Index, IP Address, OS, Vendor, Packets, and Bytes.
-  - Press 's' to stop monitoring and select the target device based on activity.
-  - Option to either target a single device or spoof all devices.
-  - Launch a Bettercap ARP spoof MITM attack on the selected target (or on all devices).
-  - Display live Bettercap output in a curses UI and log it to a file.
-  - Each log entry is timestamped.
-  - The log file name is generated using the format "DD_MM_YY_HHMM".
-  - Consecutive log entries with the same timestamp (to the second) are suppressed.
-
-Usage:
-  sudo python3 EvenBetterCap.py
-
-Dependencies:
-  - nmap, Bettercap, and Scapy (install via pip if needed: pip install scapy)
-
-References:
-  - Bettercap: https://www.bettercap.org
-  - Scapy: https://scapy.readthedocs.io
-  - Python curses: https://docs.python.org/3/library/curses.html
-"""
 
 import subprocess
 import xml.etree.ElementTree as ET
@@ -379,7 +348,7 @@ def curses_loop(stdscr, proc, log_file):
     curses.init_pair(3, curses.COLOR_MAGENTA, -1)
     stdscr.nodelay(True)
     output_lines = []
-    header_text = "EvenBetterCap MITM Tool - Live Bettercap Output"
+    header_text = "TheListener MITM Tool"
     subheader_text = "Press 'q' to exit"
     while True:
         try:
@@ -469,7 +438,7 @@ def run_bettercap_dynamic(target_ip, iface):
 # Main Execution Flow
 # ---------------------------
 def main():
-    print("=== EvenBetterCap MITM Tool ===")
+    print("=== TheListener MITM Tool ===")
     iface = select_interface()
     local_ip, network_range = get_network_info_from_interface(iface)
     devices = scan_network(network_range, local_ip)
