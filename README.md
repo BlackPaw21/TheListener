@@ -58,7 +58,7 @@ sudo python3 TheListener.py
 
 ## 🌐 Web Log Viewer
 
-After running EvenBetterCap and capturing data, you can view and analyze logs with a GUI:
+After running BetterCap and capturing data, you can view and analyze logs with a GUI:
 
 ```bash
 python3 reader.py
@@ -78,4 +78,4 @@ Open your browser and go to:
 ## ⚠️ Disclaimer
 
 This tool is intended for **educational and authorized security testing** only.  
-Using EvenBetterCap on networks you do not own or have permission to audit is **illegal**.
+Using TheListener on networks you do not own or have permission to audit is **illegal**.
