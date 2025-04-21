@@ -1,5 +1,5 @@
 # TheListener 👂
-![Kali Linux](https://img.shields.io/badge/KaliLinux-blue.svg) ![Bettercap](https://img.shields.io/badge/Bettercap-orange.svg) ![Nmap](https://img.shields.io/badge/Nmap-blue.svg) ![Scapy](https://img.shields.io/badge/Scapy-blue.svg) ![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?logo=kalilinux&logoColor=white&style=for-the-badge) ![Bettercap](https://img.shields.io/badge/Bettercap-orange.svg) ![Nmap](https://img.shields.io/badge/Nmap-blue.svg) ![Scapy](https://img.shields.io/badge/Scapy-blue.svg) ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ---
 **A powerful man-in-the-middle (MITM) attack automation suite designed for red teamers and penetration testers.**
 This tool leverages `Bettercap`, `Nmap`, and `Scapy` to monitor, fingerprint, and intercept traffic across a local network in real time with a live dashboard, URL/credential logging, OS detection, and optional full-target mode.
